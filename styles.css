@@ -1,0 +1,167 @@
+ /* Базовий стиль для всіх екранів */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.images p {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+ul, ol {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#medicament {
+    width: 5%;
+}
+
+/* Адаптивна верстка для екранів шириною до 500px */
+@media (max-width: 500px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header nav a {
+        margin: 5px 0;
+    }
+    
+    table, th, td {
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    form {
+        width: 100%;
+    }
+    
+    form input {
+        width: 100%;
+    }
+    
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Адаптивна верстка для екранів шириною до 1000px */
+@media (max-width: 1000px) {
+    main {
+        padding: 10px;
+    }
+    
+    table, th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    form {
+        width: 80%;
+    }
+    
+    form input {
+        width: 100%;
+    }
+}
+
+/* Адаптивна верстка для екранів шириною більше 1000px */
+@media (min-width: 1001px) {
+    main {
+        padding: 40px;
+    }
+    
+    table, th, td {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    form {
+        width: 60%;
+    }
+    
+    form input {
+        width: 100%;
+    }
+}

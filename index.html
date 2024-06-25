@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Довідник медичних препаратів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Довідник медичних препаратів</h1>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#">Про нас</a>
+            <a href="#">Контакти</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Список медичних препаратів</h2>
+            <div class="images">
+                <img src="img/med1.png" alt="Місце для зображення препарату" id="medicament">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Назва препарату</th>
+                        <th>Призначення</th>
+                        <th>Дозування</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Парацетамол</td>
+                        <td>Знеболювальне, жарознижувальне</td>
+                        <td>500 мг 3 рази на день</td>
+                    </tr>
+                    <tr>
+                        <td>Ібупрофен</td>
+                        <td>Протизапальне, знеболювальне</td>
+                        <td>200 мг 4 рази на день</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Категорії препаратів</h2>
+            <ul>
+                <li>Знеболювальні</li>
+                <li>Протизапальні</li>
+                <li>Антибіотики</li>
+                <li>Вітаміни</li>
+            </ul>
+            <ol>
+                <li>Знеболювальні</li>
+                <li>Протизапальні</li>
+                <li>Антибіотики</li>
+                <li>Вітаміни</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Додати новий препарат</h2>
+            <form id="drug-form">
+                <label for="drug-name">Назва препарату:</label>
+                <input type="text" id="drug-name" name="drug-name" required>
+                
+                <label for="drug-purpose">Призначення:</label>
+                <input type="text" id="drug-purpose" name="drug-purpose" required>
+                
+                <label for="drug-dosage">Дозування:</label>
+                <input type="text" id="drug-dosage" name="drug-dosage" required>
+                
+                <button type="submit">Додати препарат</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Довідник медичних препаратів</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
